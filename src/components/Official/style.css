@@ -1,0 +1,58 @@
+.d3-official-site {
+  display: flex;
+  flex-direction: column;
+}
+
+.d3-title {
+  font-size: 20px;
+  margin-top: 14px;
+  margin-left: 60px;
+  text-align: left;
+}
+
+.d3-official-site img {
+  align-self: start;
+  margin-left: 60px;
+}
+
+.d3-site-info {
+  display: flex;
+  flex: 0 0 30%;
+  margin-top: 16px;
+}
+
+.d3-site-info > div {
+  width: 100%;
+}
+
+.d3-site-info > div > p {
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+  color: #98a8b4;
+}
+
+.d3-sensitive-title {
+  margin-top: 60px;
+  margin-left: 60px;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: left;
+}
+
+.d3-sensitive-title::before {
+  content: '';
+  display: inline-block;
+  width: 0;
+  height: 0;
+  font-size: 0;
+  line-height: 0;
+  border-left: 9px solid #fff;
+  border-right: 9px solid transparent;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+}
+
+.d3-sensitive-area {
+  flex: 1 0 36%;
+}

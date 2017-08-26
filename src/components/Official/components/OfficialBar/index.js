@@ -1,0 +1,62 @@
+import PropTypes from 'prop-types';
+import * as d3 from 'd3';
+import D3blackbox from '../D3blackbox';
+import './style.css';
+
+const OfficialSiteBar = D3blackbox(function() {
+  const { selector, data } = this.props;
+  const margin = { top: 20, right: 20, bottom: 30, left: 40 };
+  const node = d3.select(`.${selector}`);
+  const width = node.node().offsetWidth - margin.left - margin.right;
+  const height = 300 - margin.top - margin.bottom;
+  const x = d3
+    .scaleBand()
+    .rangeRound([0, width - margin.left - margin.right])
+    .padding(0.1)
+    .domain(data.map(x => x.name));
+  const y = d3
+    .scaleLinear()
+    .rangeRound([height, 0])
+    .domain([0, d3.max(data, d => d.value)]);
+  const svg = node
+    .append('svg')
+    .attr('width', width)
+    .attr('height', height + 40)
+    .append('g')
+    .attr('transform', `translate(${margin.left}, ${margin.top})`);
+
+  svg
+    .append('g')
+    .attr('class', 'axis')
+    .attr('transform', `translate(-10,${height})`)
+    .call(d3.axisBottom(x));
+
+  console.log(x.bandwidth());
+  const bar = svg.selectAll('.bar').data(data).enter();
+  bar
+    .append('rect')
+    .attr('class', 'bar')
+    .attr('x', d => x(d.name) + x.bandwidth() / 2 - 15)
+    .attr('y', d => y(d.value))
+    .attr('width', 10)
+    .attr('height', d => height - y(d.value));
+
+  bar
+    .append('text')
+    .attr('class', 'bar-label')
+    .text(d => d.value)
+    .attr('x', d => x(d.name) + x.bandwidth() / 2 - 15)
+    .attr('y', d => y(d.value))
+    .attr('dx', '5px')
+    .attr('dy', '-5px');
+});
+
+OfficialSiteBar.propTypes = {
+  data: PropTypes.array.isRequired,
+};
+
+OfficialSiteBar.defaultProps = {
+  data: [],
+};
+
+export default OfficialSiteBar;

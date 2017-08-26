@@ -1,0 +1,16 @@
+.arc text {
+  font: 10px sans-serif;
+  text-anchor: middle;
+}
+
+.arc-text {
+  fill: #fff;
+  font: 14px sans-serif;
+}
+
+.arc-label {
+  color: #98a8b4;
+  font-size: 14px;
+  line-height: 22px;
+    text-align: center;
+}

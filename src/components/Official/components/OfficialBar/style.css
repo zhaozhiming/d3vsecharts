@@ -1,0 +1,26 @@
+.bar {
+  fill: #235ee9;
+}
+
+.bar-label {
+  fill: #98a8b4;
+  font-size: 13px;
+  text-anchor: middle;
+}
+
+.bar:hover {
+  fill: #2667FF;
+}
+
+.axis path {
+  stroke: #235ee9;
+}
+
+.axis line {
+  display: none;
+}
+
+.axis text {
+  fill: #98a8b4;
+  text-anchor: middle;
+}
