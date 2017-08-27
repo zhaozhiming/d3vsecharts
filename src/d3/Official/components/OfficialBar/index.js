@@ -36,18 +36,27 @@ const OfficialSiteBar = D3blackbox(function() {
     .append('rect')
     .attr('class', 'bar')
     .attr('x', d => x(d.name) + x.bandwidth() / 2 - 15)
-    .attr('y', d => y(d.value))
+    .attr('y', d => height)
     .attr('width', 10)
-    .attr('height', d => height - y(d.value));
+    .attr('height', 0)
+    .transition()
+    .duration(500)
+    .ease(d3.easeLinear)
+    .attr('height', d => height - y(d.value))
+    .attr('y', d => y(d.value));
 
   bar
     .append('text')
     .attr('class', 'bar-label')
     .text(d => d.value)
     .attr('x', d => x(d.name) + x.bandwidth() / 2 - 15)
-    .attr('y', d => y(d.value))
+    .attr('y', d => height)
     .attr('dx', '5px')
-    .attr('dy', '-5px');
+    .attr('dy', '-5px')
+    .transition()
+    .duration(500)
+    .ease(d3.easeLinear)
+    .attr('y', d => y(d.value));
 });
 
 OfficialSiteBar.propTypes = {

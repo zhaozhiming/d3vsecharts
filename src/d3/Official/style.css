@@ -56,10 +56,3 @@
 .d3-sensitive-area {
   flex: 1 0 36%;
 }
-
-.d3-official-total-view-pie,
-.d3-official-total-ip-pie,
-.d3-official-total-attack-pie,
-.d3-official-today-attack-pie {
-  position: relative;
-}

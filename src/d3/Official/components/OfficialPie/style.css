@@ -16,7 +16,7 @@
 }
 
 .tip {
-  position: absolute;
+  position: relative;
   top: -10px;
   left: 10px;
 }
@@ -24,6 +24,7 @@
 .tip-container {
   display: flex;
   align-items: center;
+  position: absolute;
   background-color: #262628;
   padding: 5px;
   border-radius: 5px;

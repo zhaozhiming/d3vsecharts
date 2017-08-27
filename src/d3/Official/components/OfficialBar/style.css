@@ -10,6 +10,7 @@
 
 .bar:hover {
   fill: #2667FF;
+  cursor: pointer;
 }
 
 .axis path {
