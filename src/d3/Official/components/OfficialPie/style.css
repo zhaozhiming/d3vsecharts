@@ -1,3 +1,7 @@
+.arc:hover {
+  filter: brightness(110%);
+}
+
 .arc text {
   font: 10px sans-serif;
   text-anchor: middle;

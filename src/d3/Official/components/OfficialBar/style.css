@@ -11,6 +11,7 @@
 .bar:hover {
   fill: #2667FF;
   cursor: pointer;
+  filter: brightness(110%);
 }
 
 .axis path {
