@@ -1,0 +1,59 @@
+.echarts-official-site {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 45%;
+}
+
+.echarts-title {
+  font-size: 20px;
+  margin-top: 14px;
+  margin-left: 60px;
+  text-align: left;
+}
+
+.echarts-official-site img {
+  align-self: start;
+  margin-left: 30px;
+}
+
+.echarts-site-info {
+  display: flex;
+  flex: 0 0 30%;
+  margin-top: 16px;
+}
+
+.echarts-site-info > div {
+  width: 100%;
+}
+
+.echarts-site-info > div > p {
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+  color: #98a8b4;
+}
+
+.echarts-sensitive-title {
+  margin-top: 60px;
+  margin-left: 60px;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: left;
+}
+
+.echarts-sensitive-title::before {
+  content: '';
+  display: inline-block;
+  width: 0;
+  height: 0;
+  font-size: 0;
+  line-height: 0;
+  border-left: 9px solid #fff;
+  border-right: 9px solid transparent;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+}
+
+.echarts-sensitive-area {
+  flex: 1 0 36%;
+}

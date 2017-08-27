@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import D3Official from './components/Official';
-import logo from './logo.svg';
+import D3Official from './d3/Official';
+import EchartsOfficial from './echarts/Official';
 import './App.css';
 
 const data = {
@@ -34,12 +34,13 @@ const data = {
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
+      <div className="container">
+        <div className="echarts">
+          <h1>Echarts</h1>
+          <EchartsOfficial data={data} />
         </div>
         <div className="d3">
+          <h1>D3</h1>
           <D3Official data={data} />
         </div>
       </div>
