@@ -12,5 +12,26 @@
   color: #98a8b4;
   font-size: 14px;
   line-height: 22px;
-    text-align: center;
+  text-align: center;
+}
+
+.tip {
+  position: absolute;
+  top: -10px;
+  left: 10px;
+}
+
+.tip-container {
+  display: flex;
+  align-items: center;
+  background-color: #262628;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.tip-icon {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 5px;
 }

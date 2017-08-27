@@ -18,6 +18,10 @@ const OfficialSitePie = D3blackbox(function() {
     .range([DEFAULT_COLOR, color]);
   const arc = d3.arc().outerRadius(radius - 20).innerRadius(radius - 30);
   const pie = d3.pie().sort(null).value(d => d.value);
+  const tooltip = node.append('div').style('display', 'none').attr('class', 'tip');
+  const tipContainer = tooltip.append('div').attr('class', 'tip-container');
+  tipContainer.append('div').attr('class', 'tip-icon');
+  tipContainer.append('div').attr('class', 'tip-content');
   const svg = node
     .append('svg')
     .attr('width', width)
@@ -30,11 +34,19 @@ const OfficialSitePie = D3blackbox(function() {
     .enter()
     .append('g')
     .attr('class', 'arc');
-  g
+  const path = g
     .append('path')
     .attr('d', arc)
     .style('fill', d => pieColor(d.data.value))
-    .style('stroke', d => pieColor(d.data.value));
+    .style('stroke', d => pieColor(d.data.value))
+    .style('cursor', 'pointer');
+  path.on('mouseover', (d) => {
+    const content = `${d.data.name}: ${d.data.value}`;
+    tooltip.select('.tip-icon').style('background-color', pieColor(d.data.value));
+    tooltip.select('.tip-content').html(content);
+    tooltip.style('display', 'block');
+  });
+  path.on('mouseout', () => tooltip.style('display', 'none'));
   svg
     .append('text')
     .attr('text-anchor', 'middle')
@@ -57,4 +69,3 @@ OfficialSitePie.defaultProps = {
 };
 
 export default OfficialSitePie;
-

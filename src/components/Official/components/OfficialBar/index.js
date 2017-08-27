@@ -5,7 +5,7 @@ import './style.css';
 
 const OfficialSiteBar = D3blackbox(function() {
   const { selector, data } = this.props;
-  const margin = { top: 20, right: 20, bottom: 30, left: 40 };
+  const margin = { top: 20, right: 0, bottom: 30, left: 20 };
   const node = d3.select(`.${selector}`);
   const width = node.node().offsetWidth - margin.left - margin.right;
   const height = 300 - margin.top - margin.bottom;
@@ -31,7 +31,6 @@ const OfficialSiteBar = D3blackbox(function() {
     .attr('transform', `translate(-10,${height})`)
     .call(d3.axisBottom(x));
 
-  console.log(x.bandwidth());
   const bar = svg.selectAll('.bar').data(data).enter();
   bar
     .append('rect')
