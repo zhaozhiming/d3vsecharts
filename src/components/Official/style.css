@@ -1,0 +1,32 @@
+.official {
+  position: relative;
+}
+
+.official-header {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: #fff;
+  background-color: #0a0a11;
+  border: 1px solid #235ee9;
+  cursor: pointer;
+}
+
+.official-container {
+  display: flex;
+  font-family: 'sans-serif';
+  text-align: center;
+}
+
+.official-echarts {
+  flex: 0 0 50%;
+  background-color: #0a0a11;
+  color: #fff;
+  border-right: 1px solid #98a8b4;
+}
+
+.official-d3 {
+  flex: 0 0 50%;
+  background-color: #0a0a11;
+  color: #fff;
+}
