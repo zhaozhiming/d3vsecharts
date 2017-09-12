@@ -1,21 +1,21 @@
 .bar {
-  fill: #235ee9;
+  fill: var(--site-third-color);
 }
 
 .bar-label {
-  fill: #98a8b4;
+  fill: var(--site-second-color);
   font-size: 13px;
   text-anchor: middle;
 }
 
 .bar:hover {
-  fill: #2667FF;
+  fill: var(--site-forth-color);
   cursor: pointer;
   filter: brightness(110%);
 }
 
 .axis path {
-  stroke: #235ee9;
+  stroke: var(--site-fifth-color);
 }
 
 .axis line {
@@ -23,6 +23,6 @@
 }
 
 .axis text {
-  fill: #98a8b4;
+  fill: var(--site-second-color);
   text-anchor: middle;
 }

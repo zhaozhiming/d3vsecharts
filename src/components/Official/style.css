@@ -6,9 +6,9 @@
   position: absolute;
   top: 20px;
   left: 20px;
-  color: #fff;
-  background-color: #0a0a11;
-  border: 1px solid #235ee9;
+  color: var(--site-main-font-color);
+  background-color: var(--site-main-bg-color);
+  border: 1px solid var(--site-main-color);
   cursor: pointer;
 }
 
@@ -20,13 +20,13 @@
 
 .official-echarts {
   flex: 0 0 50%;
-  background-color: #0a0a11;
-  color: #fff;
-  border-right: 1px solid #98a8b4;
+  background-color: var(--site-main-bg-color);
+  color: var(--site-main-font-color);
+  border-right: 1px solid var(--site-second-color);
 }
 
 .official-d3 {
   flex: 0 0 50%;
-  background-color: #0a0a11;
-  color: #fff;
+  background-color: var(--site-main-bg-color);
+  color: var(--site-main-font-color);
 }

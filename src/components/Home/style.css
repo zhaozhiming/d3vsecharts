@@ -1,8 +1,7 @@
 .home {
   height: 100vh;
-  font-family: 'sans-serif';
   text-align: center;
-  background-color: #0a0a11;
+  background-color: var(--site-main-bg-color);
 }
 
 .home-buttons {
@@ -11,7 +10,6 @@
   justify-content: center;
   align-items: center;
   height: 100%;
-  margin: 0;
 }
 
 .home-button {
@@ -23,9 +21,9 @@
   height: 50px;
   font-size: 28px;
   line-height: 32px;
-  color: #fff;
-  background-color: #0a0a11;
-  border: 1px solid #235ee9;
+  color: var(--site-main-font-color);
+  background-color: var(--site-main-bg-color);
+  border: 1px solid var(--site-main-color);
   cursor: pointer;
 }
 
