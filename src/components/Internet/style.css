@@ -1,0 +1,32 @@
+.internet {
+  position: relative;
+}
+
+.internet-header {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: var(--site-main-font-color);
+  background-color: var(--site-main-bg-color);
+  border: 1px solid var(--site-main-color);
+  cursor: pointer;
+}
+
+.internet-container {
+  display: flex;
+  font-family: 'sans-serif';
+  text-align: center;
+}
+
+.internet-echarts {
+  flex: 0 0 50%;
+  background-color: var(--site-main-bg-color);
+  color: var(--site-main-font-color);
+  border-right: 1px solid var(--site-second-color);
+}
+
+.internet-d3 {
+  flex: 0 0 50%;
+  background-color: var(--site-main-bg-color);
+  color: var(--site-main-font-color);
+}

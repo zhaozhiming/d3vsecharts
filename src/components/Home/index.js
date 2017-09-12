@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Official from '../Official';
+import Internet from '../Internet';
 import './style.css';
 
 export default class Home extends Component {
@@ -12,7 +13,7 @@ export default class Home extends Component {
       case 'official':
         return <Official goback={() => this.setState({ charts: 'init' })} />;
       case 'internet':
-        return <div>hello world</div>;
+        return <Internet goback={() => this.setState({ charts: 'init' })} />;
       default:
         return (
           <div className="home">
