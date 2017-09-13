@@ -1,0 +1,28 @@
+.echarts-internet {
+  width: 100%;
+}
+
+.echarts-internet-title {
+  font-size: 20px;
+  color: var(--site-main-font-color);
+  margin: 6px;
+}
+
+.echarts-internet-content {
+  display: flex;
+  flex: 0 0 100%;
+  flex-direction: column;
+  color: var(--site-main-font-color);
+}
+
+.echarts-internet-content-total-state {
+  display: flex;
+  flex: 1 0 50%;
+  margin-top: 24px;
+  min-height: 136px;
+}
+
+.echarts-internet-content-index-count,
+.echarts-internet-content-high-risk {
+  flex: 0 0 50%;
+}
