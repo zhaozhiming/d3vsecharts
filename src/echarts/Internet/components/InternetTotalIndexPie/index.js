@@ -38,6 +38,7 @@ const option = data => {
         silent: true,
         style: {
           text: 'Total',
+          fontSize: 24,
           textAlign: 'center',
           fill: '#feffff',
         },

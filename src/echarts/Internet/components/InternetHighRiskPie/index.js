@@ -40,6 +40,7 @@ const option = data => {
         silent: true,
         style: {
           text: 'High Risk',
+          fontSize: 24,
           textAlign: 'center',
           fill: '#feffff',
         },

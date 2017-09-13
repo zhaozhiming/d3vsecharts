@@ -1,11 +1,20 @@
 .echarts-internet {
+  display: flex;
+  flex-direction: column;
   width: 100%;
 }
 
 .echarts-internet-title {
-  font-size: 20px;
   color: var(--site-main-font-color);
-  margin: 6px;
+  font-size: 20px;
+  margin-top: 14px;
+  margin-left: 60px;
+  text-align: left;
+}
+
+.echarts-internet img {
+  align-self: start;
+  margin-left: 30px;
 }
 
 .echarts-internet-content {
