@@ -21,10 +21,10 @@ const OfficialSitePie = D3blackbox(function() {
   const tooltip = node
     .append('div')
     .style('display', 'none')
-    .attr('class', 'tip');
-  const tipContainer = tooltip.append('div').attr('class', 'tip-container');
-  tipContainer.append('div').attr('class', 'tip-icon');
-  tipContainer.append('div').attr('class', 'tip-content');
+    .attr('class', 'official-tip');
+  const tipContainer = tooltip.append('div').attr('class', 'official-tip-container');
+  tipContainer.append('div').attr('class', 'official-tip-icon');
+  tipContainer.append('div').attr('class', 'official-tip-content');
   const svg = node
     .append('svg')
     .attr('width', width)
@@ -36,7 +36,7 @@ const OfficialSitePie = D3blackbox(function() {
     .data(pie(data))
     .enter()
     .append('g')
-    .attr('class', 'arc');
+    .attr('class', 'official-arc');
   const path = g
     .append('path')
     .attr('d', arc)
@@ -57,8 +57,8 @@ const OfficialSitePie = D3blackbox(function() {
     .attr('text-anchor', 'middle')
     .attr('dy', '5px')
     .text(pieValue)
-    .attr('class', 'arc-text');
-  node.append('p').text(title).attr('class', 'arc-label');
+    .attr('class', 'official-arc-text');
+  node.append('p').text(title).attr('class', 'official-arc-label');
   const attrTween = b => {
     b.innerRadius = 0;
     const interpolate = d3.interpolate({ startAngle: 0, endAngle: 0 }, b);

@@ -1,31 +1,31 @@
-.arc:hover {
+.official-arc:hover {
   filter: brightness(110%);
 }
 
-.arc text {
+.official-arc text {
   font: 10px sans-serif;
   text-anchor: middle;
 }
 
-.arc-text {
+.official-arc-text {
   fill: var(--site-main-font-color);
   font: 14px sans-serif;
 }
 
-.arc-label {
+.official-arc-label {
   color: var(--site-second-color);
   font-size: 14px;
   line-height: 22px;
   text-align: center;
 }
 
-.tip {
+.official-tip {
   position: relative;
   top: -10px;
   left: 10px;
 }
 
-.tip-container {
+.official-tip-container {
   display: flex;
   align-items: center;
   position: absolute;
@@ -34,7 +34,7 @@
   border-radius: 5px;
 }
 
-.tip-icon {
+.official-tip-icon {
   width: 10px;
   height: 10px;
   border-radius: 50%;

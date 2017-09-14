@@ -1,28 +1,28 @@
-.bar {
+.official-bar {
   fill: var(--site-main-color);
 }
 
-.bar-label {
+.official-bar-label {
   fill: var(--site-second-color);
   font-size: 13px;
   text-anchor: middle;
 }
 
-.bar:hover {
+.official-bar:hover {
   fill: var(--site-third-color);
   cursor: pointer;
   filter: brightness(110%);
 }
 
-.axis path {
+.official-axis path {
   stroke: var(--site-main-color);
 }
 
-.axis line {
+.official-axis line {
   display: none;
 }
 
-.axis text {
+.official-axis text {
   fill: var(--site-second-color);
   text-anchor: middle;
 }

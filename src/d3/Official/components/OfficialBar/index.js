@@ -27,14 +27,14 @@ const OfficialSiteBar = D3blackbox(function() {
 
   svg
     .append('g')
-    .attr('class', 'axis')
+    .attr('class', 'official-axis')
     .attr('transform', `translate(-10,${height})`)
     .call(d3.axisBottom(x));
 
   const bar = svg.selectAll('.bar').data(data).enter();
   bar
     .append('rect')
-    .attr('class', 'bar')
+    .attr('class', 'official-bar')
     .attr('x', d => x(d.name) + x.bandwidth() / 2 - 15)
     .attr('y', d => height)
     .attr('width', 10)
@@ -47,7 +47,7 @@ const OfficialSiteBar = D3blackbox(function() {
 
   bar
     .append('text')
-    .attr('class', 'bar-label')
+    .attr('class', 'official-bar-label')
     .text(d => d.value)
     .attr('x', d => x(d.name) + x.bandwidth() / 2 - 15)
     .attr('y', d => height)
