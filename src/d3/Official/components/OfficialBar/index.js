@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import * as d3 from 'd3';
-import D3blackbox from '../D3blackbox';
+import D3blackbox from '../../../../components/D3blackbox';
 import './style.css';
 
 const OfficialSiteBar = D3blackbox(function() {

@@ -1,5 +1,5 @@
 .bar {
-  fill: var(--site-third-color);
+  fill: var(--site-main-color);
 }
 
 .bar-label {
@@ -9,13 +9,13 @@
 }
 
 .bar:hover {
-  fill: var(--site-forth-color);
+  fill: var(--site-third-color);
   cursor: pointer;
   filter: brightness(110%);
 }
 
 .axis path {
-  stroke: var(--site-fifth-color);
+  stroke: var(--site-main-color);
 }
 
 .axis line {

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import EchartInternet from '../../echarts/Internet';
+import D3Internet from '../../d3/Internet';
 import './style.css';
 
 const data = {
@@ -23,6 +24,7 @@ class Internet extends Component {
           </div>
           <div className="internet-d3">
             <h1>D3</h1>
+            <D3Internet data={data} />
           </div>
         </div>
       </div>
