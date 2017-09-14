@@ -5,7 +5,7 @@ import OfficialPie from './components/OfficialPie';
 import titleBar from '../../images/left-bar.svg';
 import './style.css';
 
-class OfficialSite extends Component {
+class Official extends Component {
   render() {
     const {
       totalView,
@@ -16,17 +16,17 @@ class OfficialSite extends Component {
     } = this.props.data;
 
     return (
-      <div className="echarts-official-site">
-        <div className="echarts-title">Official</div>
+      <div className="echarts-official">
+        <div className="echarts-official-title">Official</div>
         <img src={titleBar} alt="" />
-        <div className="echarts-site-info">
+        <div className="echarts-official-info">
           <OfficialPie title="Total Views" data={totalView} color="#235ee9" />
           <OfficialPie title="Total IPs" data={totalIp} color="#235ee9" />
           <OfficialPie title="Attacks" data={totalAttack} color="#ed5700" />
           <OfficialPie title="Today Attacks" data={todayAttack} color="#ed5700" />
         </div>
-        <h5 className="echarts-sensitive-title">Area</h5>
-        <div className="echarts-sensitive-area">
+        <h5 className="echarts-official-sensitive-title">Area</h5>
+        <div className="echarts-official-sensitive-area">
           <OfficialBar data={sensitiveArea} />
         </div>
       </div>
@@ -34,11 +34,11 @@ class OfficialSite extends Component {
   }
 }
 
-OfficialSite.propTypes = {
+Official.propTypes = {
   data: PropTypes.object.isRequired,
 };
 
-OfficialSite.defaultProps = {
+Official.defaultProps = {
   data: {
     totalView: [],
     totalIp: [],
@@ -51,4 +51,4 @@ OfficialSite.defaultProps = {
   },
 };
 
-export default OfficialSite;
+export default Official;

@@ -5,7 +5,7 @@ import OfficialSiteBar from './components/OfficialBar';
 import titleBar from '../../images/left-bar.svg';
 import './style.css';
 
-class OfficialSite extends Component {
+class Official extends Component {
   render() {
     const {
       totalView,
@@ -16,10 +16,10 @@ class OfficialSite extends Component {
     } = this.props.data;
 
     return (
-      <div className="d3-official-site">
-        <div className="d3-title">Official</div>
+      <div className="d3-official">
+        <div className="d3-official-title">Official</div>
         <img src={titleBar} alt="" />
-        <div className="d3-site-info">
+        <div className="d3-official-info">
           <OfficialSitePie
             selector="d3-official-total-view-pie"
             title="Total Views"
@@ -45,8 +45,8 @@ class OfficialSite extends Component {
             color="#ed5700"
           />
         </div>
-        <h5 className="d3-sensitive-title">Area</h5>
-        <div className="d3-sensitive-area">
+        <h5 className="d3-official-sensitive-title">Area</h5>
+        <div className="d3-official-sensitive-area">
           <OfficialSiteBar
             selector="d3-official-bar"
             data={sensitiveArea.name.map((x, i) => ({
@@ -60,11 +60,11 @@ class OfficialSite extends Component {
   }
 }
 
-OfficialSite.propTypes = {
+Official.propTypes = {
   data: PropTypes.object.isRequired,
 };
 
-OfficialSite.defaultProps = {
+Official.defaultProps = {
   data: {
     totalView: [],
     totalIp: [],
@@ -77,4 +77,4 @@ OfficialSite.defaultProps = {
   },
 };
 
-export default OfficialSite;
+export default Official;

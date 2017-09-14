@@ -1,39 +1,39 @@
-.echarts-official-site {
+.echarts-official {
   display: flex;
   flex-direction: column;
   flex: 0 0 45%;
 }
 
-.echarts-title {
+.echarts-official-title {
   font-size: 20px;
   margin-top: 14px;
   margin-left: 60px;
   text-align: left;
 }
 
-.echarts-official-site img {
+.echarts-official img {
   align-self: start;
   margin-left: 30px;
 }
 
-.echarts-site-info {
+.echarts-official-info {
   display: flex;
   flex: 0 0 30%;
   margin-top: 16px;
 }
 
-.echarts-site-info > div {
+.echarts-official-info > div {
   width: 100%;
 }
 
-.echarts-site-info > div > p {
+.echarts-official-info > div > p {
   font-size: 14px;
   line-height: 22px;
   text-align: center;
   color: var(--site-second-color);
 }
 
-.echarts-sensitive-title {
+.echarts-official-sensitive-title {
   margin-top: 60px;
   margin-left: 60px;
   font-size: 18px;
@@ -41,7 +41,7 @@
   text-align: left;
 }
 
-.echarts-sensitive-title::before {
+.echarts-official-sensitive-title::before {
   content: '';
   display: inline-block;
   width: 0;
@@ -54,6 +54,6 @@
   border-bottom: 6px solid transparent;
 }
 
-.echarts-sensitive-area {
+.echarts-official-sensitive-area {
   flex: 1 0 36%;
 }
