@@ -1,8 +1,8 @@
-.official {
+.synthesize {
   position: relative;
 }
 
-.official-header {
+.synthesize-header {
   position: absolute;
   top: 20px;
   left: 20px;
@@ -12,21 +12,21 @@
   cursor: pointer;
 }
 
-.official-container {
+.synthesize-container {
   display: flex;
   font-family: 'sans-serif';
   text-align: center;
   min-height: 100vh;
 }
 
-.official-echarts {
+.synthesize-echarts {
   flex: 0 0 50%;
   background-color: var(--site-main-bg-color);
   color: var(--site-main-font-color);
   border-right: 1px solid var(--site-second-color);
 }
 
-.official-d3 {
+.synthesize-d3 {
   flex: 0 0 50%;
   background-color: var(--site-main-bg-color);
   color: var(--site-main-font-color);
