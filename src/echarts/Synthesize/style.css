@@ -1,0 +1,19 @@
+.echarts-synthesize{
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 45%;
+}
+
+.echarts-synthesize-title {
+  font-size: 20px;
+  margin-top: 14px;
+  margin-left: 60px;
+  text-align: left;
+}
+
+.echarts-synthesize img {
+  align-self: start;
+  margin-left: 30px;
+}
+
+
