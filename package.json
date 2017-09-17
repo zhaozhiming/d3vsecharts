@@ -15,5 +15,5 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "homepage": "http://zhaozhiming.github.io/d3vsecharts"
+  "homepage": "https://zhaozhiming.github.io/d3vsecharts"
 }
