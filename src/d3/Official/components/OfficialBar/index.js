@@ -3,7 +3,7 @@ import * as d3 from 'd3';
 import D3blackbox from '../../../../components/D3blackbox';
 import './style.css';
 
-const OfficialSiteBar = D3blackbox(function() {
+const OfficialBar = D3blackbox(function() {
   const { selector, data } = this.props;
   const margin = { top: 20, right: 0, bottom: 30, left: 20 };
   const node = d3.select(`.${selector}`);
@@ -59,12 +59,12 @@ const OfficialSiteBar = D3blackbox(function() {
     .attr('y', d => y(d.value));
 });
 
-OfficialSiteBar.propTypes = {
+OfficialBar.propTypes = {
   data: PropTypes.array.isRequired,
 };
 
-OfficialSiteBar.defaultProps = {
+OfficialBar.defaultProps = {
   data: [],
 };
 
-export default OfficialSiteBar;
+export default OfficialBar;

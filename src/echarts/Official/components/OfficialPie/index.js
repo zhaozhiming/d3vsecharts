@@ -38,7 +38,7 @@ const option = (title, data, color) => ({
   ],
 });
 
-class OfficialSitePie extends Component {
+class OfficialPie extends Component {
   render() {
     const { title, data, color } = this.props;
     return (
@@ -55,16 +55,16 @@ class OfficialSitePie extends Component {
   }
 }
 
-OfficialSitePie.propTypes = {
+OfficialPie.propTypes = {
   title: PropTypes.string.isRequired,
   data: PropTypes.array.isRequired,
   color: PropTypes.string,
 };
 
-OfficialSitePie.defaultProps = {
+OfficialPie.defaultProps = {
   title: '',
   data: [],
   color: ['#515c61', '#235ee9'],
 };
 
-export default OfficialSitePie;
+export default OfficialPie;

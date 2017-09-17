@@ -5,7 +5,7 @@ import './style.css';
 
 const DEFAULT_COLOR = '#515c61';
 
-const OfficialSitePie = D3blackbox(function() {
+const OfficialPie = D3blackbox(function() {
   const { selector, color, data, title } = this.props;
   const pieValue = `${data.map(x => x.value).reduce((a, b) => a + b, 0)}`;
   const node = d3.select(`.${selector}`);
@@ -67,16 +67,16 @@ const OfficialSitePie = D3blackbox(function() {
   path.transition().duration(750).attrTween('d', attrTween);
 });
 
-OfficialSitePie.propTypes = {
+OfficialPie.propTypes = {
   title: PropTypes.string.isRequired,
   data: PropTypes.array.isRequired,
   color: PropTypes.string,
 };
 
-OfficialSitePie.defaultProps = {
+OfficialPie.defaultProps = {
   title: '',
   data: [],
   color: '#235ee9',
 };
 
-export default OfficialSitePie;
+export default OfficialPie;

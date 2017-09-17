@@ -52,7 +52,7 @@ const option = data => ({
   ],
 });
 
-class OfficialSitBar extends Component {
+class OfficialBar extends Component {
   render() {
     return (
       <ReactEchartsCore option={option(this.props.data)} echarts={echarts} />
@@ -60,15 +60,15 @@ class OfficialSitBar extends Component {
   }
 }
 
-OfficialSitBar.propTypes = {
+OfficialBar.propTypes = {
   data: PropTypes.object.isRequired,
 };
 
-OfficialSitBar.defaultProps = {
+OfficialBar.defaultProps = {
   data: {
     name: [],
     value: [],
   },
 };
 
-export default OfficialSitBar;
+export default OfficialBar;
