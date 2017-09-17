@@ -1,0 +1,25 @@
+.d3-synthesize-x-axis path,
+.d3-synthesize-y-axis path {
+  stroke: #235ee9;
+}
+
+.d3-synthesize-y-axis path {
+  stroke-width: 0;
+}
+
+.d3-synthesize-x-axis line,
+.d3-synthesize-y-axis line {
+  stroke: #235ee9;
+  stroke-opacity: 0.3;
+  stroke-width: 3px;
+  shape-rendering: crispEdges;
+}
+
+.d3-synthesize-y-axis line {
+  stroke-width: 1px;
+}
+
+.d3-synthesize-x-axis text,
+.d3-synthesize-y-axis text {
+  fill: none;
+}

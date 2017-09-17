@@ -1,17 +1,17 @@
-.echarts-synthesize{
+.d3-synthesize{
   display: flex;
   flex-direction: column;
   flex: 0 0 45%;
 }
 
-.echarts-synthesize-title {
+.d3-synthesize-title {
   font-size: 20px;
   margin-top: 14px;
   margin-left: 60px;
   text-align: left;
 }
 
-.echarts-synthesize img {
+.d3-synthesize img {
   align-self: start;
   margin-left: 30px;
 }
